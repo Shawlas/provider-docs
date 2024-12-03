@@ -1,4 +1,4 @@
-package ghostface.dev.person;
+package codes.shawlas.person;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

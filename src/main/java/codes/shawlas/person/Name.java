@@ -1,6 +1,5 @@
-package ghostface.dev.person;
+package codes.shawlas.person;
 
-import ghostface.dev.Main;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.Range;
@@ -8,7 +7,7 @@ import org.jetbrains.annotations.Range;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import static ghostface.dev.Main.hasSequence;
+import static codes.shawlas.Main.hasSequence;
 
 public final class Name implements CharSequence {
 

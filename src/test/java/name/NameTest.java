@@ -1,6 +1,6 @@
 package name;
 
-import ghostface.dev.person.Name;
+import codes.shawlas.person.Name;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

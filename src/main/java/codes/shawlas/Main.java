@@ -1,7 +1,10 @@
-package ghostface.dev;
+package codes.shawlas;
 
+import codes.shawlas.email.Email;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 
@@ -29,6 +32,20 @@ public final class Main {
     }
 
     public static void main(@NotNull String @NotNull [] args) {
+        @NotNull String msg = "para mais contato acesse contato@gmail.com ou contatodois@gmail.com";
+
+        System.out.println(findEmails(msg));
+    }
+
+    private static @NotNull List<String>  findEmails(@NotNull String string) {
+        @NotNull String @NotNull [] str = string.split("\\s");
+        @NotNull List<String> list = new ArrayList<>();
+
+        for (@NotNull String s : str) {
+            if (Email.validate(s)) list.add(s);
+        }
+
+        return list;
     }
 
     private Main() {

@@ -1,6 +1,6 @@
 package email;
 
-import ghostface.dev.email.Email;
+import codes.shawlas.email.Email;
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

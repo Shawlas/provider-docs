@@ -1,6 +1,6 @@
 package CPF;
 
-import ghostface.dev.person.CPF;
+import codes.shawlas.person.CPF;
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

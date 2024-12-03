@@ -1,9 +1,9 @@
 package email;
 
-import ghostface.dev.email.domain.Domain;
-import ghostface.dev.email.domain.SLD;
-import ghostface.dev.email.domain.SubDomain;
-import ghostface.dev.email.domain.TLD;
+import codes.shawlas.email.domain.Domain;
+import codes.shawlas.email.domain.SLD;
+import codes.shawlas.email.domain.SubDomain;
+import codes.shawlas.email.domain.TLD;
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
