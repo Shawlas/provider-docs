@@ -4,11 +4,17 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public final class TLD implements CharSequence {
 
-    // Static Initializer
+    // Static Initializers
+
+    public static @NotNull List<@NotNull String> getAll() {
+        return TLDS.getList();
+    }
 
     public static boolean validate(@NotNull String tld) {
         try {
@@ -1367,6 +1373,20 @@ public final class TLD implements CharSequence {
         ZONE("generic"),
         ZUERICH("generic"),
         ZW("country-code");
+
+        // Static
+
+        public static @NotNull List<@NotNull String> getList() {
+            @NotNull List<@NotNull String> list = new ArrayList<>();
+
+            for (@NotNull TLDS tld : values()) {
+                list.add(tld.name());
+            }
+
+            return list;
+        }
+
+        // Objects
 
         private final @NotNull String type;
 
