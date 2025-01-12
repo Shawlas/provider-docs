@@ -2,7 +2,6 @@ package codes.shawlas.email;
 
 import codes.shawlas.email.domain.Domain;
 import codes.shawlas.email.localpart.LocalPart;
-import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -44,25 +43,21 @@ public final class Email implements CharSequence {
     }
 
     @Override
-    @Contract(pure = true)
     public @NotNull String toString() {
         return localPart + "@" + domain;
     }
 
     @Override
-    @Contract(pure = true)
     public int length() {
         return toString().length();
     }
 
     @Override
-    @Contract(pure = true)
     public char charAt(int index) {
         return toString().charAt(index);
     }
 
     @Override
-    @Contract(pure = true)
     public @NotNull CharSequence subSequence(int start, int end) {
         return toString().subSequence(start, end);
     }
